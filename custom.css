@@ -1,0 +1,52 @@
+/*
+Placeholder for custom user CSS
+
+mainly to be overridden in profile/static/custom/custom.css
+
+This will always be an empty file in IPython
+*/
+<style>
+    @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic);
+
+    div.cell{
+        font-family:'roboto','helvetica','sans';
+        color:#444;
+        width:800px;
+        margin-left:16% !important;
+        margin-right:auto;
+    }
+
+    div.text_cell_render{
+        font-family: 'roboto','helvetica','sans';
+        line-height: 145%;
+        font-size: 120%;
+        color:#444;
+        width:800px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .CodeMirror{
+            font-family: "Menlo", source-code-pro,Consolas, monospace;
+    }
+    .prompt{
+        display: None;
+    }    
+    .warning{
+        color: rgb( 240, 20, 20 )
+        }  
+</style>
+<script>
+    MathJax.Hub.Config({
+                        TeX: {
+                           extensions: ["AMSmath.js"]
+                           },
+                tex2jax: {
+                    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+                },
+                displayAlign: 'center', // Change this to 'center' to center equations.
+                "HTML-CSS": {
+                    styles: {'.MathJax_Display': {"margin": 4}}
+                }
+        });
+</script>
